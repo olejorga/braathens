@@ -1,5 +1,12 @@
+import Image from "next/image";
+import Layout from "../components/layout";
+
 export default function Home() {
   return (
-    <h1 className="text-9xl">Hello</h1>
+    <Layout>
+      <section>
+        SECTION
+      </section>
+    </Layout>
   )
 }
