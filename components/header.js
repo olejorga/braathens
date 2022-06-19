@@ -23,21 +23,23 @@ export default function Header() {
         <Link href="/">
           <a className="flex items-center gap-1">
             <span className="material-symbols-rounded">route</span>
-            <span>Routes</span>
+            <span className="hidden sm:block">Routes</span>
           </a>
         </Link>
         <Link href="/radar">
           <a className="flex items-center gap-1">
             <span className="material-symbols-rounded">radar</span>
-            <span>Radar</span>
+            <span className="hidden sm:block">Radar</span>
           </a>
         </Link>
-        <span className="opacity-10">|</span>
+        <span className="opacity-10 hidden sm:block">|</span>
         <Link href="/">
-          <a>Log in</a>
+          <a className="flex items-center gap-1">
+            <span className="material-symbols-rounded">person</span>
+          </a>
         </Link>
         <Link href="/">
-          <button className="py-2 px-4 bg-black text-white rounded-md">Join us</button>
+          <button className="py-2 px-4 bg-black text-white rounded-md">Join</button>
         </Link>
       </nav>
     </header>

@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="bg-red-600 text-white rounded-xl border-2 border-white ring-2 ring-black p-16 flex flex-col items-center gap-8">
-      <h1 className="text-center text-5xl font-bold">Where you're headed?</h1>
+      <h1 className="text-center font-bold text-3xl sm:text-5xl">Where you're headed?</h1>
       <label className="relative text-black">
         <span className="absolute z-10 top-2 left-14">
           <small>From</small>

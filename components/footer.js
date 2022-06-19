@@ -5,7 +5,7 @@ import Logo from "../public/logo2.svg"
 export default function Footer() {
   return (
     <footer className="bg-black text-white rounded-t-xl p-8">
-      <nav className="flex gap-8 items-start justify-between">
+      <nav className="flex gap-8 items-start justify-between flex-col sm:flex-row">
         <Link href="/">
           <a>
             <Image src={Logo} width={172} height={40} />
@@ -28,16 +28,6 @@ export default function Footer() {
           <li className="text-lg font-bold mb-2">Navigate</li>
           <li>
             <Link href="">
-              <a>Dashboard</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="">
-              <a>Dispatch</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="">
               <a>Radar</a>
             </Link>
           </li>
@@ -57,7 +47,7 @@ export default function Footer() {
         </ul>
       </nav>
       <p className="mt-8 pt-4 border-t-2 border-neutral-900">
-        <small className="text-neutral-500"><strong>*Disclaimer:</strong> This is a virtual airline based on the real Braathens airline founded by Ludvig G. Braathen in 1946.</small>
+        <small className="text-neutral-500"><strong>*N.B.:</strong> This is a virtual airline, loosely based on the real Braathens airline founded by Ludvig G. Braathen in 1946.</small>
       </p>
     </footer>
   )
