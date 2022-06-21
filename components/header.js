@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import Logo from "../public/logo.svg"
+import Dropdown from "./dropdown"
 
 export default function Header() {
   const [scrollY, setScrollY] = useState(0)
@@ -34,12 +35,8 @@ export default function Header() {
         </Link>
         <span className="opacity-10 hidden sm:block">|</span>
         <Link href="/">
-          <a className="flex items-center gap-1">
-            <span className="material-symbols-rounded">person</span>
-          </a>
-        </Link>
-        <Link href="/">
-          <button className="py-2 px-4 bg-black text-white rounded-md">Join</button>
+          {/* <button className="py-2 px-4 bg-black text-white rounded-md">Join</button> */}
+          <Dropdown />
         </Link>
       </nav>
     </header>

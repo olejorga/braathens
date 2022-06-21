@@ -55,7 +55,6 @@ export default function Home() {
       {/* "Enlist" section. */}
       <section className="my-32 flex gap-8 flex-col items-center">
         <h2 className="inline-block text-3xl font-bold underline decoration-red-600 underline-offset-8 decoration-4 border-b-2 border-black pb-2">Convinced?</h2>
-        <p>The skies of the world needs <u className="decoration-red-600">you.</u></p>
         <button className="py-2 px-4 bg-black text-white rounded-md">Enlist now</button>
       </section>
     </Layout>
