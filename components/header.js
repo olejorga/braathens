@@ -8,6 +8,8 @@ export default function Header() {
   const [scrollY, setScrollY] = useState(0)
   
   useEffect(() => {
+    setScrollY(window.pageYOffset)
+
     window.addEventListener("scroll", () => {
       setScrollY(window.pageYOffset)
     })
@@ -34,10 +36,44 @@ export default function Header() {
           </a>
         </Link>
         <span className="opacity-10 hidden sm:block">|</span>
-        <Link href="/">
-          {/* <button className="py-2 px-4 bg-black text-white rounded-md">Join</button> */}
-          <Dropdown />
-        </Link>
+        <Dropdown
+          head={
+            <>
+              <span>▐▐▐▐</span>
+              <span className="mt-1 uppercase">Travolta</span>
+            </>
+          }
+          items={[
+            <Link href="/">
+              <a className="flex items-center gap-1">
+                <span className="material-symbols-rounded">flight_takeoff</span>
+                <span className="hidden sm:block">Dispatch</span>
+              </a>
+            </Link>,
+            <Link href="/">
+              <a className="flex items-center gap-1">
+                <span className="material-symbols-rounded">space_dashboard</span>
+                <span className="hidden sm:block">Dashboard</span>
+              </a>
+            </Link>,
+            <Link href="/">
+              <a className="flex items-center gap-1">
+                <span className="material-symbols-rounded">settings</span>
+                <span className="hidden sm:block">Settings</span>
+              </a>
+            </Link>
+          ]}
+          foot={
+            <Link href="/">
+              <a className="flex items-center gap-1">
+                <span className="material-symbols-rounded">logout</span>
+                <span className="hidden sm:block">Log out</span>
+              </a>
+            </Link>
+          }
+          alignRight={true}
+        />
+        {/* <button className="py-2 px-4 bg-black text-white rounded-md">Join</button> */}
       </nav>
     </header>
   )
