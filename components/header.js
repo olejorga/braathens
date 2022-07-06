@@ -37,6 +37,11 @@ export default function Header() {
         </Link>
         <span className="opacity-10 hidden sm:block">|</span>
         <Dropdown
+          button={
+            <figure className="relative w-10 h-10 ">
+              <Image src="/avatar.webp" layout="fill" objectFit="cover" className="rounded-full" />
+            </figure>
+          }
           head={
             <>
               <span>▐▐▐▐</span>
@@ -47,19 +52,19 @@ export default function Header() {
             <Link href="/">
               <a className="flex items-center gap-1">
                 <span className="material-symbols-rounded">flight_takeoff</span>
-                <span className="hidden sm:block">Dispatch</span>
+                <span>Dispatch</span>
               </a>
             </Link>,
             <Link href="/">
               <a className="flex items-center gap-1">
                 <span className="material-symbols-rounded">space_dashboard</span>
-                <span className="hidden sm:block">Dashboard</span>
+                <span>Dashboard</span>
               </a>
             </Link>,
             <Link href="/">
               <a className="flex items-center gap-1">
                 <span className="material-symbols-rounded">settings</span>
-                <span className="hidden sm:block">Settings</span>
+                <span>Settings</span>
               </a>
             </Link>
           ]}
@@ -67,7 +72,7 @@ export default function Header() {
             <Link href="/">
               <a className="flex items-center gap-1">
                 <span className="material-symbols-rounded">logout</span>
-                <span className="hidden sm:block">Log out</span>
+                <span>Log out</span>
               </a>
             </Link>
           }

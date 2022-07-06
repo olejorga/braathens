@@ -1,6 +1,7 @@
+import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 
-export default function Dropdown({head, foot, items, alignRight}) {
+export default function Dropdown({button, head, foot, items, alignRight}) {
   const [menuOpen, setMenuOpen] = useState(false)
   const toggleButton = useRef()
 
@@ -14,7 +15,11 @@ export default function Dropdown({head, foot, items, alignRight}) {
 
   return (
     <menu className="relative">
-      <button className="p-4 bg-white border-2 border-black rounded-full" onClick={toggleMenu} ref={toggleButton}></button>
+      <button className="border-2 border-black rounded-full" onClick={toggleMenu} ref={toggleButton}>
+        <div className="pointer-events-none">
+          {button}
+        </div>
+      </button>
       <ul className={`absolute mt-1 bg-white p-3 border-2 border-black rounded-lg shadow-xl flex-col gap-3 ${alignRight ? 'right-0' : ''} ${menuOpen ? 'flex' : 'hidden'}`}>
         {head ?
           <li className="border-b-2 border-black border-opacity-10 pb-3 flex items-center gap-2">

@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Hero from "../components/hero";
-import Layout from "../components/layout";
+import Image from "next/image"
+import Hero from "../components/hero"
+import Layout from "../components/layout"
 
 export default function Home() {
   return (
