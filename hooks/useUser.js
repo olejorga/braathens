@@ -1,3 +1,7 @@
 export default function useUser() {
-  return null
+  let user, loading, error
+
+  // TODO: Hey!
+
+  return {user, loading, error}
 }

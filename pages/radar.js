@@ -30,7 +30,7 @@ export default function Radar() {
           integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
           crossOrigin="" />
       </Head>
-      <section className="bg-black rounded-3xl p-4 mb-32">
+      <section className="bg-black rounded-3xl p-4">
         <h1 className="text-4xl text-white font-bold text-center my-4">Current flights</h1>
         <div className="relative w-full aspect-square">
           <div className="w-full h-full absolute z-20 rounded-full pointer-events-none border-4 border-black ring-4 ring-white"></div>
@@ -39,6 +39,10 @@ export default function Radar() {
           </div>
           <div id="map" className="w-full h-full absolute z-0 rounded-full"></div>
         </div>
+      </section>
+      <section className="my-32">
+        <h2 className="text-4xl font-bold text-center">Search</h2>
+        ...
       </section>
     </Layout>
   )

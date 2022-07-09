@@ -14,12 +14,12 @@ export default function Footer() {
         <ul className="flex flex-col gap-2">
           <li className="text-lg font-bold mb-2">Aviate</li>
           <li>
-            <Link href="/">
+            <Link href="/about">
               <a>About</a>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/history">
               <a>History</a>
             </Link>
           </li>
@@ -27,12 +27,12 @@ export default function Footer() {
         <ul className="flex flex-col gap-2">
           <li className="text-lg font-bold mb-2">Navigate</li>
           <li>
-            <Link href="/">
+            <Link href="/radar">
               <a>Radar</a>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/routes">
               <a>Routes</a>
             </Link>
           </li>
@@ -40,7 +40,12 @@ export default function Footer() {
         <ul className="flex flex-col gap-2">
           <li className="text-lg font-bold mb-2">Communicate</li>
           <li>
-            <Link href="/">
+            <Link href="/contact">
+              <a>Roster</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
               <a>Contact</a>
             </Link>
           </li>
