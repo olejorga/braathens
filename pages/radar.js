@@ -12,7 +12,7 @@ export default function Radar() {
           <div className="radar !w-full !h-full absolute z-10 rounded-full pointer-events-none opacity-50">
             <div className="scanner"></div>
           </div>
-          <Map className="w-full h-full absolute z-0 rounded-full !bg-green-900" center={[38.907132, -77.036546]} zoom={12}>
+          <Map className="w-full h-full absolute z-0 rounded-full !bg-green-900" center={[60, 0]} zoom={4}>
             {({ GeoJSON }) => (
               <>
                 <GeoJSON 
