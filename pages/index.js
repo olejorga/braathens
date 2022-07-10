@@ -38,7 +38,7 @@ export default function Home() {
           <h2 className="inline-block text-3xl font-bold underline decoration-red-600 underline-offset-8 decoration-4 border-b-2 border-black pb-2">Retro</h2>
           <p className="mt-6 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac massa placerat, tempor tortor ut, euismod ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
         </div>
-        <Image src="/retro.jpg" width={360} height={270} className="rounded-lg" />
+        <Image src="/retro.jpg" width={360} height={250} className="rounded-lg" />
       </article>
 
       {/* "Planning" section. */}
@@ -47,7 +47,7 @@ export default function Home() {
           <h2 className="inline-block text-3xl font-bold underline decoration-red-600 underline-offset-8 decoration-4 border-b-2 border-black pb-2">Planning</h2>
           <p className="mt-6 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac massa placerat, tempor tortor ut, euismod ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
         </div>
-        <Image src="/planning.jpg" width={360} height={270} className="rounded-lg" />
+        <Image src="/planning.jpg" width={360} height={250} className="rounded-lg" />
       </article>
 
       {/* "Radar" section. */}
@@ -56,7 +56,7 @@ export default function Home() {
           <h2 className="inline-block text-3xl font-bold underline decoration-red-600 underline-offset-8 decoration-4 border-b-2 border-black pb-2">Radar</h2>
           <p className="mt-6 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac massa placerat, tempor tortor ut, euismod ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
         </div>
-        <Image src="/radar.jpg" width={360} height={270} className="rounded-lg" />
+        <Image src="/radar.jpg" width={360} height={250} className="rounded-lg" />
       </article>
 
       {/* "Compatible" section. */}
@@ -65,7 +65,7 @@ export default function Home() {
           <h2 className="inline-block text-3xl font-bold underline decoration-red-600 underline-offset-8 decoration-4 border-b-2 border-black pb-2">Compatible</h2>
           <p className="mt-6 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac massa placerat, tempor tortor ut, euismod ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
         </div>
-        <figure className="w-80 h-60 px-5 py-4 rounded-lg flex flex-col items-center justify-center bg-neutral-100 gap-6">
+        <figure className="w-80 h-60 px-5 py-1 rounded-lg flex flex-col items-center justify-center bg-neutral-100 gap-6">
           <p className="flex items-center gap-2 font-bold -ml-14">
             <span className="material-symbols-rounded text-red-600 text-4xl">
               check_circle

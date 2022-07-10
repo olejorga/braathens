@@ -32,8 +32,7 @@ export default function Radar() {
         </div>
       </section>
       <section className="my-32">
-        <h2 className="text-4xl font-bold text-center">Search</h2>
-        ...
+        <div className="h-64 p-16 bg-black rounded-3xl font-bold text-6xl text-yellow-400">LAX</div>
       </section>
     </Layout>
   )
