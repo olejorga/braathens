@@ -3,9 +3,9 @@ import "leaflet/dist/leaflet.css"
 
 const { MapContainer } = ReactLeaflet
 
-export default function Map({ children, ...props }) {
+export default function Map({ children, ...rest }) {
   return (
-    <MapContainer {...props}>
+    <MapContainer {...rest}>
       {children(ReactLeaflet)}
     </MapContainer>
   )

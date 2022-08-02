@@ -3,6 +3,13 @@ import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import Logo from "../public/logo.svg"
 
+/**
+ * A global header.
+ * 
+ * @param {Object} props All.
+ * 
+ * @returns {JSX.Element}
+ */
 export default function Header() {
   const [scrollY, setScrollY] = useState(0)
   const [menuOpen, setMenuOpen] = useState(false)

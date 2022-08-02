@@ -1,7 +1,14 @@
-import Footer from "./footer";
-import Header from "./header";
+import Footer from "./footer"
+import Header from "./header"
 
-export default function Layout({children}) {
+/**
+ * A global layout wrapper.
+ * 
+ * @param {Object} props All.
+ * 
+ * @returns {JSX.Element}
+ */
+export default function Layout({ children }) {
   return (
     <>
       <Header />

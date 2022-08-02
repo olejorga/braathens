@@ -28,7 +28,6 @@ export default function Radar() {
               </>
             )}
           </Map>
-          {/* <div id="map" className="w-full h-full absolute z-0 rounded-full"></div> */}
         </div>
       </section>
       <section className="my-32">

@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Hero from "../components/hero"
+import Input from "../components/input"
 import Layout from "../components/layout"
 
 export default function Home() {
@@ -19,17 +20,7 @@ export default function Home() {
           </span>
           <input className="text-black py-2 px-4 rounded-md border-2 border-black w-72 pt-8 pl-14 uppercase font-bold" type="text" placeholder="..." />
         </label>
-        <label className="relative text-black -mb-24">
-          <span className="absolute z-10 top-2 left-14">
-            <small>To</small>
-          </span>
-          <span>
-          <span className="material-symbols-rounded absolute z-10 top-6 left-4 font-bold">
-            flight_land
-          </span>
-          </span>
-          <input className="text-black py-2 px-4 rounded-md border-2 border-black w-72 pt-8 pl-14 uppercase font-bold" type="text" placeholder="..." />
-        </label>
+        <Input />
       </Hero>
 
       {/* "Retro" section. */}
@@ -67,8 +58,8 @@ export default function Home() {
         </div>
         <figure className="w-80 h-60 px-5 py-1 rounded-lg flex flex-col items-center justify-center bg-neutral-100 gap-6">
           <p className="flex items-center gap-2 font-bold -ml-14">
-            <span className="material-symbols-rounded text-red-600 text-4xl">
-              check_circle
+            <span className="material-symbols-rounded text-yellow-400 text-4xl">
+              pending
             </span>
             <span className="text-2xl">MSFS</span>
           </p>
@@ -83,8 +74,8 @@ export default function Home() {
 
       {/* "Enlist" section. */}
       <section className="my-32 flex gap-8 flex-col items-center">
-        <h2 className="inline-block text-3xl font-bold underline decoration-red-600 underline-offset-8 decoration-4 border-b-2 border-black pb-2">Convinced?</h2>
-        <button className="py-2 px-4 bg-black text-white rounded-md">Enlist now</button>
+        <h2 className="inline-block text-3xl font-bold underline decoration-red-600 underline-offset-8 decoration-4 border-b-2 border-black pb-2">Enlist now</h2>
+        <button className="py-2 px-4 bg-black text-white rounded-md">Create account</button>
       </section>
     </Layout>
   )
