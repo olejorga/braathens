@@ -42,15 +42,15 @@ export default function Header() {
         </Link>
 
         {/* Navigation. */}
-        <Link href="/">
+        <Link href="/routes">
           <a className="flex items-center gap-1">
-            <span className="material-symbols-rounded">route</span>
+            <span className="material-symbols-rounded font-bold">route</span>
             <span className="hidden sm:block">Routes</span>
           </a>
         </Link>
         <Link href="/radar">
           <a className="flex items-center gap-1">
-            <span className="material-symbols-rounded">radar</span>
+            <span className="material-symbols-rounded font-bold">radar</span>
             <span className="hidden sm:block">Radar</span>
           </a>
         </Link>
@@ -74,7 +74,7 @@ export default function Header() {
             <li>
               <Link href="/">
                 <a className="flex items-center gap-1">
-                  <span className="material-symbols-rounded">flight_takeoff</span>
+                  <span className="material-symbols-rounded font-bold">flight_takeoff</span>
                   <span>Dispatch</span>
                 </a>
               </Link>
@@ -82,7 +82,7 @@ export default function Header() {
             <li>
               <Link href="/">
                 <a className="flex items-center gap-1">
-                  <span className="material-symbols-rounded">space_dashboard</span>
+                  <span className="material-symbols-rounded font-bold">space_dashboard</span>
                   <span>Dashboard</span>
                 </a>
               </Link>
@@ -90,7 +90,7 @@ export default function Header() {
             <li>
               <Link href="/">
                 <a className="flex items-center gap-1">
-                  <span className="material-symbols-rounded">settings</span>
+                  <span className="material-symbols-rounded font-bold">settings</span>
                   <span>Settings</span>
                 </a>
               </Link>
@@ -98,7 +98,7 @@ export default function Header() {
             <li className="border-t-2 border-black border-opacity-10 pt-3">
               <Link href="/">
                 <a className="flex items-center gap-1">
-                  <span className="material-symbols-rounded">logout</span>
+                  <span className="material-symbols-rounded font-bold">logout</span>
                   <span>Log out</span>
                 </a>
               </Link>
@@ -107,7 +107,11 @@ export default function Header() {
         </menu>
 
         {/* If not logged in, show join button. */}
-        {/* <button className="py-2 px-4 bg-black text-white rounded-md">Join</button> */}
+        {/*
+        <Link href="/login">
+          <a className="button bg-black text-white">Join</a>
+        </Link>
+        */}
       </nav>
     </header>
   )

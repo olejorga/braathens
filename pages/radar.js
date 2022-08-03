@@ -6,7 +6,7 @@ export default function Radar() {
   return (
     <Layout>
       <section className="bg-black rounded-3xl p-4">
-        <h1 className="text-4xl text-white font-bold text-center my-4">Current flights</h1>
+        <h1 className="text-4xl text-white font-bold text-center my-4">Radar</h1>
         <div className="relative w-full aspect-square">
           <div className="w-full h-full absolute z-20 rounded-full pointer-events-none border-4 border-black ring-4 ring-white"></div>
           <div className="radar !w-full !h-full absolute z-10 rounded-full pointer-events-none opacity-50">

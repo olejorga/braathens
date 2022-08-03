@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import Hero from "../components/hero"
 import Input from "../components/input"
 import Layout from "../components/layout"
@@ -9,18 +10,8 @@ export default function Home() {
       {/* Hero section. */}
       <Hero>
         <h1 className="text-center font-bold text-3xl sm:text-5xl">Where you're headed?</h1>
-        <label className="relative text-black">
-          <span className="absolute z-10 top-2 left-14">
-            <small>From</small>
-          </span>
-          <span>
-          <span className="material-symbols-rounded absolute z-10 top-6 left-4 font-bold">
-            flight_takeoff
-          </span>
-          </span>
-          <input className="text-black py-2 px-4 rounded-md border-2 border-black w-72 pt-8 pl-14 uppercase font-bold" type="text" placeholder="..." />
-        </label>
-        <Input />
+        <Input label="From" icon="flight_takeoff" placeholder="..." />
+        <Input label="To" icon="flight_land" placeholder="..." className="-mb-24" />
       </Hero>
 
       {/* "Retro" section. */}
@@ -58,7 +49,7 @@ export default function Home() {
         </div>
         <figure className="w-80 h-60 px-5 py-1 rounded-lg flex flex-col items-center justify-center bg-neutral-100 gap-6">
           <p className="flex items-center gap-2 font-bold -ml-14">
-            <span className="material-symbols-rounded text-yellow-400 text-4xl">
+            <span className="material-symbols-rounded text-neutral-400 text-4xl">
               pending
             </span>
             <span className="text-2xl">MSFS</span>
@@ -75,7 +66,9 @@ export default function Home() {
       {/* "Enlist" section. */}
       <section className="my-32 flex gap-8 flex-col items-center">
         <h2 className="inline-block text-3xl font-bold underline decoration-red-600 underline-offset-8 decoration-4 border-b-2 border-black pb-2">Enlist now</h2>
-        <button className="py-2 px-4 bg-black text-white rounded-md">Create account</button>
+        <Link href="/signup">
+          <a className="button bg-black text-white">Create account</a>
+        </Link>
       </section>
     </Layout>
   )
